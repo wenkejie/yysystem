@@ -62,10 +62,10 @@
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 46.7%); // #777
-@gray-lighter:           lighten(#000, 93.5%); // #eee
+@gray-dark:              #333;   // #333
+@gray:                   #666; // #555
+@gray-light:             #777; 
+@gray-lighter:           #aaa; 
 
 @color-primary:         #428bca;
 @color-success:         #5cb85c;
@@ -87,7 +87,11 @@
 @link-color:            @color-primary;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
+// 页面最小宽度
+@page-min-width:1000px;
 
+// 表单相关
+@label-color:@gray-light;
 
 //== Typography
 //

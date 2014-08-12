@@ -22,8 +22,8 @@
   color: @btn-color;
 
   &:hover{
-    border-color: darken(@btn-bg, 15%);
-    background-color: darken(@btn-bg, 10%);
+    border-color: darken(@btn-bg, 10%);
+    background-color: darken(@btn-bg, 5%);
   }
 }
 
@@ -53,11 +53,12 @@
   //   }
   // }
 
-  // &:hover,
-  // &:focus {
-  //   color: @btn-default-color;
-  //   text-decoration: none;
-  // }
+  &:hover,
+  &:focus {
+    background-color: #fafafa;
+    border-color: #bbb;
+    text-decoration: none;
+  }
 
   &:active,
   &.active {
