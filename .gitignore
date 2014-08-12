@@ -29,7 +29,7 @@ local.properties
 .buildpath
 
 node_modules/
-
+.temp/
 #################
 ## Visual Studio
 #################
