@@ -1,0 +1,37 @@
+//
+// 弹出框
+// --------------------------------------------------
+// 变量
+
+
+.yy-dialog{
+  &:extend(.yy-float-container);
+  width: 300px;
+}
+
+.yy-dialog-header{
+  position: relative;
+  height: 35px;
+  padding: 5px 15px;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #fafafa;
+  .border-top-radius;
+  font-weight: 700;
+
+  .yy-close{
+    right: 10px;
+    text-shadow:1px 1px 0 #fff;
+  }
+}
+
+.yy-dialog-body{
+  padding: @element-space;
+}
+
+.yy-dialog-footer{
+  padding:10px @element-space;
+  border-top: 1px solid #e7e7e7;
+  background-color: #fafafa;
+  text-align: right;
+  .border-bottom-radius;
+}

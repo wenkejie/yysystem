@@ -1,0 +1,69 @@
+//
+// 下拉相关
+// --------------------------------------------------
+// 变量
+
+
+.yy-drop-down{
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.yy-select{
+  padding: 5px 0;
+
+  // 标题
+  > .title{
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    font-weight: 700;
+  }
+
+  // 当有多个title的时候，下面的title加上margin-top
+  > li + .title{
+    margin-top: 15px;
+  }
+
+  // 分割线
+  > .split{
+    height: 1px;
+    margin: 5px 0;
+    background-color: #eee;
+  }
+}
+
+
+.yy-select-link{
+  display: block;
+  padding: 0 20px;
+  line-height: 24px;
+  color: @gray-dark;
+  transition:all ease .3s;
+
+  &:hover{
+    background-color: @color-primary;
+    color: #fff;
+  }
+
+  &.disabled{
+    &,&:hover{
+      color: @gray-lighter;
+      background-color: #fff;
+      cursor: not-allowed;
+    }
+  }
+}
+
+
+//待过滤功能下拉框
+.yy-filter-select{
+  min-width: 220px;
+}
+
+.yy-filter-select-header{
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color:#F6F6F6;
+}
