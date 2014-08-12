@@ -1,0 +1,168 @@
+
+//==============   兼容 inline block 属性  ===============
+//==============   @author fen             ===============
+.inline-block(){
+  display: inline-block;
+  *display: inline;
+  *zoom:1;
+}
+
+// Opacity
+
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+//**
+// * 渐变色
+// * @params  statColor | endColor | direction
+// * @author fen 
+
+
+.linear(@starColor,@endColor){
+  background: @endColor; /* Old browsers */
+  background: -moz-linear-gradient(top,  @starColor 0%, @endColor 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@starColor), color-stop(100%,@endColor)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  @starColor 0%,@endColor 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  @starColor 0%,@endColor 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  @starColor 0%,@endColor 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  @starColor 0%,@endColor 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@starColor, endColorstr=@endColor,GradientType=0 ); /* IE6-9 */
+}
+
+// ===============================
+.dib-wrap,.fui-form-grid,.fui-box{font-size:0}
+.dib-wrap,.fui-form-grid,.fui-box,.fui-multi-btn{
+  div,span,a,p,label,button,input,textarea,ul,table,dl{
+    font-size: 12px;
+  }
+}
+
+/*=========common==========*/
+.psr{position:relative}
+.psa{position:absolute}
+.pss{position:static}
+.psf{position: fixed;}
+
+// display 缩写dp+属性开头
+.dpb{display:block}
+.dpi{display:inline}
+.dpib{.inline-block}
+// border 缩写 bd
+.bdn{border: none;}
+.bln{border-left: none;}
+.brn{border-right: none;}
+
+.w100p{ width:100%}
+.w50p{ width:50%}
+.w-a{width:auto}
+
+
+.tal{text-align: left}
+.tar{text-align: right}
+.tac{text-align:center}
+
+//
+.layout-fixed,.table-fixed {
+    table-layout: fixed;
+}
+/* 设置内联, 减少浮动带来的bug */
+.left,.right {display:inline}
+.left {float:left}
+.right {float:right}
+.fl-n{float: none;}
+/*clear*/
+.cb{ clear:both}
+.cl{ clear:left}
+.cr{ clear:right}
+/*强制不换行*/
+.oneline{white-space:nowrap}
+/*强制打散文字*/
+.wordbreak{word-break:break-all}
+/*自动换行 */
+.autoline{ word-wrap: break-word; word-break: normal} 
+/*强制大写*/
+.uppercase{ text-transform:uppercase}
+// 元素对齐
+.vat{vertical-align: top;}
+.vam{vertical-align: middle;}
+.vab{vertical-align: bottom;}
+// 禁止中文输入法
+.no-chinese{ime-mode : disabled}
+// 鼠标样式
+.cur-w{cursor:wait}
+.cur-p{cursor: pointer;}
+.cur-d{cursor: default;}
+.cur-m{cursor: move;}
+.cur-col-resize{cursor: col-resize}
+.cur-e{cursor: e-resize}
+.cur-s{cursor: s-resize}
+.cur-na{cursor: not-allowed;}
+//文字对齐
+.tal{text-align: left;}
+.tar{text-align: right;}
+.tac{text-align: center;}
+// 文字省略
+.toe{white-space:nowrap;overflow:hidden;text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+//强制换行
+.word-break{word-wrap: break-word; word-break: normal;}
+
+.fwb{font-weight: 700}
+.fwn{font-weight: 500}
+
+.fma{font-family: arial}
+.fmt{font-family: tahoma}
+.fms{font-family: "宋体"}
+
+.ofh{overflow:hidden}
+.ofa{overflow:auto}
+.ofv{overflow:visible}
+.ofs{overflow:scroll}
+
+.scroll{overflow: auto}
+.scroll-y{ overflow:hidden;overflow-y:auto}
+.scroll-x{ overflow:hidden;overflow-x:auto}
+
+
+//========================================
+
+.hr{
+  .clearfix;
+  height: 0px;
+  overflow: hidden;
+  margin: 8px 0;
+  border-top:1px solid #eee;
+  
+}
+
+/*===========  margin设置  =============*/
+
+
+//
+/* 隐藏, 通常用来与 JS 配合 */
+.none {display:none}
+.block{display: block}
+.hide{visibility: hidden;}
+.visible{visibility: visible;}
+.opacity0{.opacity(0)}
+
+//=================
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+

@@ -1,0 +1,55 @@
+//
+// 侧边弹出框
+// --------------------------------------------------
+// 变量
+@input-border-color:#ccc;
+@input-border-radius:2px;
+@input-height:30px;
+@input-padding:5px;
+
+
+@input-height-small:26px;
+
+// ========mixin
+
+
+
+.yy-input{
+  height: @input-height;
+  width: 250px;
+  padding: @input-padding;
+  // line-height:@input-height - @input-padding*2;
+  border: 1px solid @input-border-color;
+  background-color: #fff;
+  border-radius: @input-border-radius;
+  outline: none;
+  transition:all ease .5s;
+  vertical-align: middle;
+
+  &:hover{
+    border-color: darken(@input-border-color, 20%)
+  }
+
+  &:focus,&.active{
+    border-color: #8DAED3;
+    box-shadow: 0 0 8px rgba(0, 128, 255, 0.4),inset 2px 2px 3px #eee;;
+  }
+
+  &.error{
+    border-color: @color-danger;
+    background-color: lighten(@color-danger, 40%);
+    box-shadow: 0 0 8px lighten(@color-danger, 20%)
+  }
+
+  &[disabled],&.disabled{
+    &,&:hover{
+      background-color: #f5f5f5;
+      color: #aaa;
+      border-color: lighten(@input-border-color, 10%)
+    }
+  }
+}
+
+.yy-input-small{
+  height: @input-height-small;
+}
