@@ -1,0 +1,77 @@
+//
+// tab
+// --------------------------------------------------
+// 变量
+@btn-default-border:#ccc;
+@btn-default-bg:#fff;
+
+
+// ========mixin
+.line-tab-size(@height:45px;@padding:15px;@font-size:14px){
+  height: @height;
+  line-height: @height;
+
+  .yy-line-tab-link{
+    padding-left: @padding;
+    padding-right: @padding;
+    font-size: @font-size;
+  }
+
+}
+
+
+
+
+// 按钮样式开始
+.yy-line-tab{
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid @primary-border-color;
+}
+
+.yy-line-tab-title{
+  float: left;
+  height: 100%;
+  margin-right: 15px;
+  font-size: 15px;
+  font-weight: 700
+}
+
+.yy-line-tab-item{
+  float: left;
+  height: 100%;
+  margin-right: 10px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.yy-line-tab-link{
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  font-size: 16px;
+  color: #888;
+
+  &:hover{
+    color: #333;
+    border-bottom: 3px solid lighten(desaturate(@primary-color,50%), 40%);
+  }
+
+  &.active{
+    border-bottom: 3px solid @primary-color;
+    color: @primary-color;
+  }
+}
+
+
+.yy-line-tab-large{
+  .line-tab-size(50px;10px;16px)
+}
+
+.yy-line-tab-small{
+  .line-tab-size(35px;5px;14px)
+}

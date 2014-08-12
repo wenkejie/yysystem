@@ -1,0 +1,116 @@
+//
+// Variables
+// --------------------------------------------------
+
+@base-font-size:        14px;
+
+@font-size-large:       ceil((@base-font-size * 1.25)); // ~18px
+@font-size-small:       ceil((@base-font-size * 0.85)); // ~12px
+
+@font-size-h1:          floor((@base-font-size * 2.6)); // ~36px
+@font-size-h2:          floor((@base-font-size * 2.15)); // ~30px
+@font-size-h3:          ceil((@base-font-size * 1.7)); // ~24px
+@font-size-h4:          ceil((@base-font-size * 1.25)); // ~18px
+@font-size-h5:          @base-font-size;
+@font-size-h6:          ceil((@base-font-size * 0.85)); // ~12px
+
+
+@element-space:         15px;
+
+//== 主要颜色
+//
+//##
+@primary-color:         #006CB7;
+@primary-border-color:  #DFDFDF;
+
+//== 头部
+//
+//##
+
+// 头部高度
+@header-height:                 50px;
+// 头部颜色
+@header-bg:                     @primary-color;
+
+//== 侧边栏
+//
+//##
+
+// 侧边栏颜色
+@side-bar-bg:                   #252932;
+// 侧边栏宽度
+@side-bar-width:                200px;
+// 侧边栏底部栏目高度
+@side-bar-footer-menu-height:   40px;
+// 快捷操作区高度
+@quick-action-height:           70px;
+
+//== 侧边栏
+//
+//##
+
+// 当前栏目信息条
+@location-info-height:          50px;
+@sub-location-nav-height:       45px;
+
+//首页内容区域中的右侧栏目宽度
+@home-main-content-right-width: 320px;
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 46.7%); // #777
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+@color-primary:         #428bca;
+@color-success:         #5cb85c;
+@color-info:            #5bc0de;
+@color-warning:         #f0ad4e;
+@color-danger:          #d9534f;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            @gray-dark;
+
+//** Global textual link color.
+@link-color:            @color-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+//** Load fonts from this directory.
+@icon-font-path:          "../fonts/";
+//** File name for all font files.
+@icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id:        "glyphicons_halflingsregular";
+
+
+
