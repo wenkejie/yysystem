@@ -1,0 +1,196 @@
+
+//首页分析结构
+.analysis-grid{
+	float: left;
+	width: 50%;padding:0 10px;
+	
+}
+
+.analysis-title{
+
+}
+
+//分析内容
+.analysis-content{
+	padding: 10px;
+	border: 1px solid @primary-border-color;
+}
+
+
+//头部
+.analysis-content-header{
+	&:extend(.clearfix all);
+	padding: 10px 0;
+}
+
+.analysis-header-filter{
+	float: left;
+}
+
+.analysis-header-filter > li{
+	float: left;
+
+}
+
+.data-filter-cell,.data-filter-last{
+	display: block;
+	height: 16px;line-height: 16px;padding: 0 10px;
+	color: #888;border-right: 1px solid #efedef;
+}
+
+.data-filter-last{
+	border-right-width: 0;padding-right: 0
+}
+
+
+
+.analysis-header-fn{
+	float: right;
+}
+
+.deploy-button{
+	color: #888;font-size: 16px;
+}
+
+//=============================
+
+//内容部分
+.analysis-content-body{
+	padding: 20px 0;
+	text-align: center;
+
+}
+
+//==========分析结构结束===================
+
+
+// 右侧用户信息
+
+.userinfo-case{
+	&:extend(.clearfix all);
+	padding-top: 15px;
+}
+
+.userinfo-portrait{
+	float: left;
+	width: 50px;height: 50px;border-radius: 25px;
+	overflow: hidden;
+	img{
+		width: 50px;height: 50px;
+	}
+}
+
+.userinfo-content{
+	float: left;
+	padding-left: 10px;
+}
+
+.userinfo-content-cell{
+	.timeinfo{
+		color: @gray-light;
+	}
+}
+
+//右侧任务分类
+.task-filter{
+	&:extend(.clearfix all);
+}
+
+.task-filter-cell,.task-filter-last{
+	float: left;
+	padding: 5px 15px;
+	border-right: 1px solid #efedef;text-align: center;
+
+	
+}
+
+// 任务计数
+
+.task-num{
+	display: block;
+	font-size: 16px;
+}
+
+.task-sortinfo{
+	display: block;
+	margin: 0 -5px;
+	color: @gray-light;
+}
+// ===
+
+.task-filter-last{
+	padding-right: 0;
+	border-right-width: 0;
+}
+
+// ==========================
+
+
+// 日程列表
+.schedule-list{}
+
+.schedule-list-cell{
+	padding: 5px 0;
+}
+
+.schedule-link{
+	padding-left: 10px;
+	color: @gray;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+// =========
+
+
+// ****************配置页面结构**********************
+
+.deploy-main-content{
+	height: 100%;
+}
+
+.yy-record-area{
+	position: relative;
+	height: 100%;padding-top: 45px;
+	// border: 1px solid @primary-border-color;box-shadow: 0 0 4px @primary-border-color;
+}
+.yy-record-header{
+	position: absolute;left: 0;top: 0;right: 0;bottom: 0;
+	height: 45px;padding: 7px 8px;
+	border-bottom:1px solid @primary-border-color;
+}
+
+//================body==========
+.yy-record-body{
+	&:extend(.clearfix all);
+	height: 100%;
+}
+
+.yy-record-box{
+	position: relative;
+	padding-left: 175px;height: 100%;
+}
+
+.yy-record-subnav{
+	position: absolute;left: 0;top: 0;bottom: 0;right: 0;
+	width: 175px;height: 100%;
+	border-right: 1px solid @primary-border-color;
+}
+
+.yy-record-content{
+	width: 100%;height: 100%;padding-bottom: 41px;
+	position: relative;
+}
+
+.yy-record-footer{
+	position: absolute;left: 0;bottom: 0;right: 0;
+	height: 41px;
+	border-top: 1px solid @primary-border-color;
+}
+
+
+
+
+
+
