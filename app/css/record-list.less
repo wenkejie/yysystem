@@ -1,0 +1,124 @@
+//
+// 记录列表
+// --------------------------------------------------
+// 变量
+
+.yy-record-area{
+	
+}
+
+
+.yy-record-grid{
+	position: relative;
+	margin-left: 15px;padding-top: 35px;
+	border-left: 2px solid #ddd;
+}
+
+.yy-record-title{
+	position: absolute;left: -12px;top: 0;z-index: 100px;
+	padding-right: 5px;padding-left: 15px;
+	text-align: left;border: 1px solid #4DBBDB;background: #5BC0DE;color: #fff;font-size: 12px;border-radius: 2px;
+}
+
+.yy-record-item{
+	&:extend(.clearfix all);
+	position: relative;
+	padding-bottom: 20px;padding-left: 60px;
+	font-size: 12px;
+	i{
+		color: #aaa;
+	}
+}
+
+.yy-record-item-last{
+	padding-bottom: 0;
+	border-left-color: #fff;
+}
+
+.record-item-msg{
+	position: absolute;left: 0;top: 0;right: 0;bottom: 0;
+	width: 60px;padding-left: 15px;
+	.record-icon{
+		position: absolute;left: -13px;top: 0;z-index: 10;
+		width: 24px;height: 24px;line-height: 26px;
+		text-align: center;background: #59B200;border-radius: 12px;color: #fff;
+	}
+	.record-icon-primary{
+		background: @color-primary;
+	}
+	.record-icon-success{
+		background: @color-success;
+	}
+	.record-icon-warning{
+		background: @color-warning;
+	}
+	.record-icon-danger{
+		background: @color-danger;
+	}
+
+	.record-timeinfo{
+		font-size: 12px;color: @gray-light;
+	}
+}
+
+
+
+.record-item-content{
+	position: relative;
+	float: left;
+	width: 100%;
+	.record-person{
+		display: inline-block;
+	}
+
+
+	.record-state{
+		color: @gray-light;
+	}
+
+	.record-delete,.record-fn{
+		position: absolute;right: 0;top: 0;
+		color: @gray-light;font-size: 12px;
+		&:hover{
+			color: @gray-dark;
+		}
+	}
+}
+
+
+.record-item-info{
+	display: block;position: relative;
+	padding-right: 50px;
+	font-size: 14px;
+	> strong{
+		display: block;
+		
+	}
+}
+
+.record-item-detail{
+	padding-top: 5px;margin-top: 5px;
+	border-top: 1px solid #ccc;
+}
+
+
+
+
+.yy-record-plan-area{
+	.yy-record-item{
+		padding-left: 30px;
+	}
+	.record-item-msg{
+		width: 30px;
+	}
+
+	.record-item-line{
+		padding: 3px 0;
+	}
+
+	.group-members{
+		display: inline-block;
+		padding: 0 7px;line-height: 18px;
+		background: #F0B72A;vertical-align: middle;border-radius: 2px;color: #fff;
+	}
+}

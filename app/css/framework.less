@@ -12,13 +12,8 @@ body{
 	color: #333;
 }
 
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { margin:0; padding:0;  }
-ol,ul { list-style:none; }
+ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,button{list-style: none;margin: 0;padding: 0}
 a{text-decoration: none;}
-caption,th { text-align:left; }
-table{ border-collapse:collapse;border-spacing:0; }
-th{ text-align:inherit; }
-img {height: auto; border: 0; -ms-interpolation-mode: bicubic; image-rendering: optimizeQuality; /* Firefox 3.6+ */ vertical-align: middle; }
 
 h1,h2,h3,h4,h5,h6{
 	display: inline-block;
@@ -27,11 +22,9 @@ h1,h2,h3,h4,h5,h6{
 h2{font-size: 18px}
 h3{font-size: 16px}
 h4{font-size: 14px}
-
-input,select{font-size: inherit;}
 // 头部
 header{
-	min-width: @page-min-width;
+	min-width: 1000px;
 	height: @header-height;
 	background: @header-bg;
 }
@@ -83,7 +76,7 @@ header{
 	left:0;
 	right:0;
 	bottom:0;
-	min-width: @page-min-width;
+	min-width: 1000px;
 }
 
 
@@ -100,7 +93,7 @@ header{
 // 快捷操作
 .quick-action{
 	height: @quick-action-height;
-	padding-top: 22px;
+	padding-top: 18px;
 	text-align: center;
 }
 
@@ -279,6 +272,26 @@ nav{
 	border-bottom: 1px solid @primary-border-color;
 }
 
+.panel-header-right{
+	float: right;
+	> span{
+		display: inline-block;
+		vertical-align: middle;
+		font-family: 宋体;
+	}
+
+	> .active{
+		background-color: #428bca;
+		border-color: #357ebd;
+		color: #ffffff;cursor: default;
+		&:hover{
+			background-color: #428bca;
+			border-color: #357ebd;
+			color: #ffffff;
+		}
+	}
+}
+
 .panel-body{
 	padding: @element-space;
 }
@@ -299,6 +312,7 @@ nav{
 
 	.panel-body{
 		border-top: 1px solid #fff;
+		padding-left:  0;padding-right:  0;
 	}
 }
 
@@ -306,29 +320,112 @@ nav{
 
 }
 
+
+
+// ****************配置页面结构,自适应panel的扩充**********************
+
+.panel-fixed{
+	position: relative;
+	height: 100%;padding-top: 45px;
+
+	.panel-header{
+		position: absolute;left: 0;top: 0;right: 0;bottom: 0;
+		height: 45px;padding: 7px 8px;
+		border-bottom:1px solid @primary-border-color;
+	}
+
+
+	.panel-body{
+		&:extend(.clearfix all);
+		height: 100%;padding: 0;
+	}
+
+
+}
+
+
 // 用于下拉框，弹出框等的总容器
 .yy-float-container{
-  position: absolute;
+  position: absolute;z-index: 610;
   min-width: 160px;
   border: 1px solid #ccc;
   box-shadow: 0 5px 7px rgba(0, 0, 0, .15);
   background-color: #fff;
   border-radius: 3px;
-  white-space: nowrap;
 }
 
 
+// 各个区域弹窗的关闭按钮通用
 .yy-close{
 	position: absolute;
-	display: block;
-	right: 0;
-	top: 7px;
-	width: 18px;
-	height: 18px;
+	right: 10px;top: 7px;
+	width: 18px;height: 18px;line-height: 18px;
 	text-align: center;
 	color: #ccc;
 
 	&:hover{
 		color: #999;
+	}
+}
+
+
+
+
+
+//================数据展示表格区域=====================
+.result-area{
+	position: relative;
+	width: 100%;height: 100%;padding-bottom: 41px;
+	overflow-y: auto;
+}
+
+.result-area-content{
+	position: relative;
+	width: 100%;height: 100%;
+}
+
+.result-area-footer{
+	position: absolute;left: 0;bottom: 0;right: 0;
+	height: 41px;line-height: 38px;
+	border-top: 1px solid @primary-border-color;
+}
+
+// ===============================================
+
+
+//================panel-fixed内部的员工管理容器===============
+
+
+.employ-manage-area{
+	position: relative;
+	.result-area-content{
+		padding-left: 175px;
+	}
+	.result-area-subnav{
+		position: absolute;left: 0;top: 0;bottom: 0;right: 0;z-index: 400;
+		width: 175px;height: 100%;
+		border-right: 1px solid @primary-border-color;
+	}
+	.result-area-footer{
+		left: 175px;
+	}
+}
+
+
+
+//================panel-fixed内部的员工管理容器===============
+
+.active-record-area{
+	position: relative;
+	.result-area-content{
+		padding-right: 300px;
+	}
+	.result-area-subnav{
+		position: absolute;top: 0;bottom: 0;right: 0;z-index: 400;
+		width: 300px;height: 100%;
+		border-left: 1px solid @primary-border-color;
+	}
+	.result-area-footer{
+		right: 300px;
 	}
 }

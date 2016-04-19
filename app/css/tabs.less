@@ -75,3 +75,45 @@
 .yy-line-tab-small{
   .line-tab-size(35px;5px;14px)
 }
+
+.yy-line-tab-mb{
+  margin-bottom: 25px;
+}
+
+
+
+
+
+//常用类型tab
+.yy-tab{
+  &:extend(.clearfix all);
+  padding: 0 10px;padding-top: 3px;
+  border-bottom: 1px solid @btn-default-border;background: #fafafa;
+
+}
+
+.yy-tab-cell{
+  float: left;
+  padding: 0 7px;height: 100%;border: 1px solid #fff;
+  background: #fff;
+  + .yy-tab-cell{
+    margin-left: 5px;
+  }
+  &:hover{
+    border-top: 2px solid lighten(desaturate(@primary-color,50%), 40%);
+    margin-bottom: -1px;border-left: 1px solid #ccc;border-right: 1px solid #ccc;
+  }
+  &.active{
+    border-top: 2px solid @primary-color;
+    margin-bottom: -1px;border-left: 1px solid #ccc;border-right: 1px solid #ccc;
+  }
+  a{
+    color: @gray-dark;
+  }
+}
+
+.yy-tab-cnt{
+  padding: 15px;
+}
+
+

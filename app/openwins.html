@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Document</title>
+	<!-- build:css({.tmp,app}) css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body style="height:3000px;">
+	<div class="yy-dialog w500">
+		<div class="yy-dialog-header">新建用户<a class="yy-close" href="javascript:"><i class="icon-times"></i></a></div>
+		<div class="yy-dialog-body">
+			<div  class="yy-dialog-grid">
+				<div class="yy-form-line">
+					<label class="yy-label-inline"><span class="yy-required">*</span>姓名：</label>
+					<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">手机：</label>
+					<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline"><span class="yy-required">*</span>电子邮箱：</label>
+					<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">性别：</label>
+					<div class="yy-radio w50">
+						<input id="man" type="radio" name="control">
+						<label for="man">男</label>
+					</div>
+					<div class="yy-radio w50">
+						<input id="wenman" type="radio" name="control">
+						<label for="wenman">女</label>
+					</div>
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">部门：</label>
+					<select class="yy-original-select yy-original-select-small" id="99" name="">
+						<option value="">斯大林空间阿斯顿</option>
+						<option value="">斯大林空间阿斯顿2</option>
+						<option value="">斯大林空间阿斯顿3</option>
+						<option value="">斯大林空间阿斯顿4</option>
+						<option value="">斯大林空间阿斯顿</option>
+					</select>
+				</div>
+				<div class="yy-form-line">
+					<a href="javascript:" class="yy-btn-link">添加更多信息 >></a>
+				</div>
+				<div class="more-info-grid">
+					<div class="yy-form-line">
+						<label class="yy-label-inline">职位：</label>
+						<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+					</div>
+					<div class="yy-form-line">
+						<label class="yy-label-inline">主管：</label>
+						<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+					</div>
+					<div class="yy-form-line">
+						<label class="yy-label-inline">员工编号：</label>
+						<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+					</div>
+					<div class="yy-form-line">
+						<label class="yy-label-inline">入职日期：</label>
+						<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">保存</button>
+		</div>
+	</div>
+
+	<div class="yy-dialog w600" style="right:0;">
+		<div class="yy-dialog-header">导入数据<a class="yy-close" href="javascript:"><i class="icon-times"></i></a></div>
+		<div class="yy-dialog-body">
+			<div class="yy-dialog-grid">
+				<div class="yy-form-line">
+					<p>仅支持以逗号为分隔符的文本文件【filename.csv】，文件最大10MB</p>
+				</div>
+				<div class="yy-form-line">
+					<p>请按照数据模板的格式准备导入数据，模板中的表头名称不可更改，表头行不能删除</p>
+					<a href="javascript:" class="yy-btn-link">下载数据模版</a>
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label-block">选择文件编码：</label>
+					<select name="" id="99" class="yy-original-select yy-original-select-small">
+						<option value="">斯大林空间阿斯顿</option>
+						<option value="">斯大林空间阿斯顿2</option>
+						<option value="">斯大林空间阿斯顿3</option>
+						<option value="">斯大林空间阿斯顿4</option>
+						<option value="">斯大林空间阿斯顿</option>
+					</select>
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label-block">当公司邮箱重复时：</label>
+					<select name="" id="99" class="yy-original-select yy-original-select-small">
+						<option value="">斯大林空间阿斯顿</option>
+						<option value="">斯大林空间阿斯顿2</option>
+						<option value="">斯大林空间阿斯顿3</option>
+						<option value="">斯大林空间阿斯顿4</option>
+						<option value="">斯大林空间阿斯顿</option>
+					</select>
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label-block">请选择需要导入的csv文件：</label>
+					<div class="yy-file-upload">
+						<button class="yy-btn yy-btn-linear"><i class="icon-plus"></i> 选择文件</button>
+						<input type="file" class="yy-file-upload-input">
+					</div>
+				</div>
+				<div class="yy-form-line">
+					<p>上传文件可能需要几分钟的时间，取决于文件大小和网速</p>
+				</div>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">保存</button>
+		</div>
+	</div>
+
+	<div class="yy-dialog w500" style="top:600px;">
+		<div class="yy-dialog-header">新建角色<a class="yy-close" href="javascript:"><i class="icon-times"></i></a></div>
+		<div class="yy-dialog-body">
+			<div class="yy-dialog-grid">
+				<div class="yy-form-line">
+					<label for="66" class="yy-label">名称：</label>
+					<input type="text" placeholder="请输入姓名" id="55" class="yy-input">
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label vat">描述：</label>
+					<!-- <input type="text" placeholder="请输入姓名" id="55" class="yy-input"> -->
+					<textarea class="yy-textarea h100" name="" id="" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">保存</button>
+		</div>
+	</div>
+
+		<!-- 详细设置弹窗 ，使用时去掉style-->
+	<div class="yy-dialog" style="width:600px;top:600px;right:0">
+		<div class="yy-dialog-header">新建字段<a class="yy-close" href="javascript:"><i class="icon-remove"></i></a></div>
+		<div class="yy-dialog-body clearfix">
+			<div class="yy-dialog-body-left">
+				<select class="yy-textarea-select" size="10" style="height:150px;">
+					<option >起运港  *</option>
+					<option>目的港  *</option>
+					<option>发布状态  </option>
+					<option>佣金  </option>
+					<option>国家  *</option>
+					<option>中转港  *</option>
+					<option>船公司  *</option>
+					<option>有效期  *</option>
+					<option>对外发布时间  *</option>
+					<option>标准箱型底价  *</option>
+					<option>特殊箱型底价  *</option>
+				</select>
+				<div class="yy-form-line">
+					<label for="" class="yy-label-block">饭店：</label>
+					<input type="text" id="" class="yy-input w180">
+				</div>
+			</div>
+			<div class="yy-dialog-body-right">
+				<h3>字段详细信息</h3>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">电话号码：</label>
+					<input type="text" id="" class="yy-input yy-input-small" placeholder="旺旺王旺旺王旺旺王旺旺王">
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">是否必填：</label>
+					<div class="yy-checkbox">
+						<input type="checkbox" class="">
+					</div>
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">是否常用：</label>
+					<div class="yy-checkbox">
+						<input type="checkbox" class="">
+					</div>
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">状态：</label>
+					<select class="yy-original-select yy-original-select-small" id="99" name="">
+						<option value="">斯大林空间阿斯顿</option>
+						<option value="">斯大林空间阿斯顿2</option>
+						<option value="">斯大林空间阿斯顿3</option>
+						<option value="">斯大林空间阿斯顿4</option>
+						<option value="">斯大林空间阿斯顿</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">确定</button>
+			<button class="yy-btn ">取消</button>
+		</div>
+	</div>
+	<div class="yy-dialog" style="width:500px;top:1000px;">
+		<div class="yy-dialog-header">编辑字段<a class="yy-close" href="javascript:"><i class="icon-remove"></i></a></div>
+		<div class="yy-dialog-body clearfix">
+			<h3>字段详细信息</h3>
+			<div class="yy-form-line">
+				<label class="yy-label-inline">电话号码：</label>
+				<input type="text" id="" class="yy-input yy-input-small" placeholder="旺旺王旺旺王旺旺王旺旺王">
+			</div>
+			<div class="yy-form-line">
+				<label class="yy-label-inline">是否必填：</label>
+				<div class="yy-checkbox">
+					<input type="checkbox" class="">
+				</div>
+			</div>
+			<div class="yy-form-line">
+				<label class="yy-label-inline">是否常用：</label>
+				<div class="yy-checkbox">
+					<input type="checkbox" class="">
+				</div>
+			</div>
+			<div class="yy-form-line">
+				<label class="yy-label-inline">状态：</label>
+				<select class="yy-original-select yy-original-select-small" id="99" name="">
+					<option value="">斯大林空间阿斯顿</option>
+					<option value="">斯大林空间阿斯顿2</option>
+					<option value="">斯大林空间阿斯顿3</option>
+					<option value="">斯大林空间阿斯顿4</option>
+					<option value="">斯大林空间阿斯顿</option>
+				</select>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">确定</button>
+			<button class="yy-btn ">取消</button>
+		</div>
+	</div>
+	<div class="yy-dialog w500" style="top:1000px;right:0">
+		<div class="yy-dialog-header">新建角色<a class="yy-close" href="javascript:"><i class="icon-times"></i></a></div>
+		<div class="yy-dialog-body">
+			<div class="yy-dialog-grid">
+				<div class="yy-form-line">
+					<label for="66" class="yy-label">名称：</label>
+					<button class="yy-btn yy-btn-small ">上传图片</button>
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label">名称：</label>
+					<input type="text" placeholder="请输入姓名" id="55" class="yy-input">
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label">名称：</label>
+					<input type="text" placeholder="请输入姓名" id="55" class="yy-input">
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label">名称：</label>
+					<input type="text" placeholder="请输入姓名" id="55" class="yy-input">
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label">名称：</label>
+					<input type="text" placeholder="请输入姓名" id="55" class="yy-input">
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label vat">描述：</label>
+					<!-- <input type="text" placeholder="请输入姓名" id="55" class="yy-input"> -->
+					<textarea class="yy-textarea h100" name="" id="" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">保存</button>
+		</div>
+	</div>
+
+	<div class="yy-dialog" style="top:1500px;left:0;width:700px;">
+		<div class="yy-dialog-header">编辑显示字段<a class="yy-close" href="javascript:"><i class="icon-remove"></i></a></div>
+		<div class="yy-dialog-body clearfix">
+			<div class="yy-multiple-select w600 pl30">
+				<div class="multiple-select-cnt">
+					<div class="multiple-select-left">
+						<h3>隐藏字段</h3>
+						<select class="yy-textarea-select" size="16" style="">
+							<option >起运港  *</option>
+							<option>目的港  *</option>
+							<option>发布状态  </option>
+							<option>佣金  </option>
+							<option>国家  *</option>
+							<option>中转港  *</option>
+							<option>船公司  *</option>
+							<option>有效期  *</option>
+							<option>对外发布时间  *</option>
+							<option>标准箱型底价  *</option>
+							<option>特殊箱型底价  *</option>
+						</select>
+					</div>
+					<div class="multiple-select-middle">
+						<div class="middle-fn">
+							<button class="yy-btn yy-btn-mini"><i class="icon-angle-left"></i></button><button class="yy-btn yy-btn-mini mt6"><i class="icon-angle-right"></i></button>
+						</div>
+					</div>
+					<div class="multiple-select-right">
+						<h3>显示字段</h3>
+						<select class="yy-textarea-select" size="10" style="">
+							<option >起运港  *</option>
+							<option>目的港  *</option>
+							<option>发布状态  </option>
+							<option>佣金  </option>
+							<option>国家  *</option>
+							<option>中转港  *</option>
+							<option>船公司  *</option>
+							<option>有效期  *</option>
+							<option>对外发布时间  *</option>
+							<option>标准箱型底价  *</option>
+							<option>特殊箱型底价  *</option>
+						</select>
+					</div>
+				</div>
+				<div class="right-fn">
+					<button class="yy-btn yy-btn-mini"><i class="icon-angle-up"></i></button><button class="yy-btn yy-btn-mini mt6"><i class="icon-angle-down"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">确定</button>
+			<button class="yy-btn ">取消</button>
+		</div>
+	</div>
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+<!-- endbuild -->
+</body>
+</html>

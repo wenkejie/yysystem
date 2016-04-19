@@ -73,7 +73,7 @@
 
 .userinfo-portrait{
 	float: left;
-	width: 50px;height: 50px;border-radius: 25px;
+	width: 50px;height: 50px;border-radius: 4px;
 	overflow: hidden;
 	img{
 		width: 50px;height: 50px;
@@ -98,7 +98,7 @@
 
 .task-filter-cell,.task-filter-last{
 	float: left;
-	padding: 5px 15px;
+	padding: 5px 0;width: 33.33%;
 	border-right: 1px solid #efedef;text-align: center;
 
 	
@@ -141,12 +141,73 @@
 	}
 }
 
-// =========
 
 
 
+// ======翻页===
+.yy-page,.pagination{
+  float: right;
+  margin: 0;margin-right: 10px;font-size: 0;
+  // border: 1px solid #ccc;border-radius: 3px;
+  // span{
+  // 	display: inline-block;
+  // 	padding-right: 5px;
+  // 	font-weight: bold;vertical-align: middle;
+  // }
+  // .yy-btn{
+  // 	// border-width: 0;border-radius: 0;
+  // 	+ .yy-btn{
+  // 		border-left-width: 0;border-radius: 0;
+  // 	}
+  // } 
+  > li{
+  	display: inline-block;
+  	vertical-align: middle;font-size: 14px;
+  	&:first-child > a{
+  		border-bottom-left-radius: 3px;border-top-left-radius: 3px;
+  	}
+  	&:last-child > a{
+  		border-bottom-right-radius: 3px;border-top-right-radius: 3px;
+  	}
+	
+  	> a{
+  		float: left;position: relative;
+  		padding:0 10px;height: 25px;line-height: 23px;margin-left: -1px;
+  		border:1px solid #ccc;color: @gray-dark;
+  		&:hover{
+  			background: #eee;color: @gray-light;
+  		}
+  		&.active {
+  			z-index: 2;
+  			background:@color-primary;color: #fff;border-color:@color-primary;
+  			cursor: default;
+  		}
+  		&.disabled{
+  			cursor: not-allowed;
+  			background: #fff;color: @gray-lighter;
+  		}
+  	}
+
+  }
+  
+}
+
+
+// 必填项标识
+.yy-required{
+	padding-right: 5px;
+	font-family:SimSun;color: #ff0000;font-size: 12px;
+}
 
 
 
+// 覆盖Bootstrap控件的样式
+
+.dropdown-menu{
+	min-width: inherit;margin: 0;
+	> li > a{
+		padding: 3px 15px;
+	}
+}
 
 

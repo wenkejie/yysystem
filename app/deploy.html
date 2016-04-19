@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Document</title>
+	<!-- build:css({.tmp,app}) css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+	<header>
+		<div class="logo"><a href="#" class="logo-link">运营平台</a></div>
+		<ul class="header-menu">
+			<li class="header-menu-item"><a href="javascript:" class="header-menu-link">项目</a></li>
+			<li class="header-menu-item"><a href="javascript:" class="header-menu-link">李光耀 <i class="icon-chevron-down"></i></a></li>
+		</ul>
+	</header>
+	<!-- 头部结束 -->
+	<div class="wrapper">
+		<div class="side-bar">
+		<div class="quick-action">
+			<button class="yy-btn yy-btn-sm yy-btn-danger quick-action-btn"><i class="icon-plus"></i> 新建</button>
+		</div>
+			<nav>
+			<div class="hr-black"></div>
+				<ul class="nav">
+					<li>
+						<a href="index.html" class="nav-link nav-link-active">
+							<i class="icon-list-alt "></i>
+							首页
+						</a>
+					</li>
+					<li>
+						<a href="detaile.html" class="nav-link">
+							<i class="icon-print "></i>
+							公海客户
+						</a>
+					</li>
+					<li>
+						<a href="detaile.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							我的客户
+						</a>
+					</li>
+					<li>
+						<a href="person-detail.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							联系人
+						</a>
+					</li>
+					<li>
+						<a href="active-record.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							活动记录
+						</a>
+					</li>
+					<li>
+						<a href="table-drag.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							基础设置
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="side-bar-footer-menu">
+				<div class="hr-black"></div>
+
+			</div>
+		</div>
+		<!-- 左侧栏目结束 -->
+		<div class="side-content">
+			<div class="location-info">
+				<div class="current-location">
+					<i class="icon-list-alt "></i>
+					控制面板 / <button class="yy-btn yy-btn-linear">斯洛克的积 <i class="icon-chevron-down"></i></button>
+				</div>
+				<div class="location-nav">
+					<ul class="yy-line-tab yy-line-tab-large">
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link active">业务字段定制</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">业务参数设定</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">部门和用户</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">业务规则设定</a></li>
+					</ul>
+				</div>
+			</div>
+			 	
+			<div class="sub-location-nav">
+					<ul class="yy-line-tab">
+						<li class="yy-line-tab-title">部门和用户</li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link active">角色管理</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">角色管理</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">角色管理</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">角色管理</a></li>
+					</ul>
+				</div> 
+			
+			<!-- main-content、main-content外面不得自己增加层级 -->
+			<div class="main-content">
+				<!-- <button class="yy-btn"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-linear"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-primary"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-success"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-warning"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-danger" disabled="disabled"><i class="icon-plus"></i> 新建</button> -->
+
+				<div class="panel panel-fixed">
+
+						<div class="panel-header">
+							<button class="yy-btn yy-btn-primary"><i class="icon-plus"></i> 新建用户</button>
+							<button class="yy-btn"><i class="icon-cloud-download"></i> 导入用户</button>
+							<button class="yy-btn yy-btn-no-border"><i class="icon-trash-o"></i> 删除</button>
+							<button class="yy-btn yy-btn-no-border"><i class="icon-mail-forward"></i> 领取或分配</button>
+							<button class="yy-btn yy-btn-no-border"><i class="icon-check"></i> 创建任务</button>
+							<button class="yy-btn yy-btn-no-border"><i class="icon-edit"></i> 编辑</button>
+							<button class="yy-btn yy-btn-no-border"><i class="icon-users"></i> 分配角色</button>
+							<button class="yy-btn yy-btn-no-border"><i class="icon-sign-out"></i> 设置离职</button>
+							<div class="panel-header-right">
+								<div class="yy-input-group">
+									<input type="text" placeholder="按姓名查找" class="yy-input" id="">
+									<button class="yy-btn"><i class="icon-search"></i></button>
+								</div>
+								<button class="yy-btn yy-btn-linear">全部 <i class="icon-chevron-down"></i></button>
+							</div>
+						</div>
+						<div class="panel-body">
+							<div class="result-area employ-manage-area">
+								<div class="result-area-subnav"></div>
+								<div class="result-area-content">
+									<table class="yy-table">
+										<thead>
+											<tr>
+												<th width="50"><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></th>
+												<th>姓名</th>
+												<th>手机号</th>
+												<th>部门</th>
+												<th>职位</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>sss</td>
+												<td>sss</td>
+												<td>sss</td>
+												<td>ss</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dad</td>
+												<td>das</td>
+												<td>dasd</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+										</tbody>
+									</table>
+									
+								</div>
+								<div class="result-area-footer">
+									<ul class="yy-page">
+										<li><a class="yy-page-cell disabled" href="javascript:"><i class="icon-angle-double-left"></i></a></li>
+										<li><a class="yy-page-cell" href="javascript:"><i class="icon-angle-left"></i></a></li>
+										<li><a class="yy-page-cell active" href="javascript:">1</a></li>
+										<li><a class="yy-page-cell" href="javascript:">2</a></li>
+										<li><a class="yy-page-cell" href="javascript:">3</a></li>
+										<li><a class="yy-page-cell" href="javascript:">...</a></li>
+										<li><a class="yy-page-cell" href="javascript:"><i class="icon-angle-right"></i></a></li>
+										<li><a class="yy-page-cell" href="javascript:"><i class="icon-angle-double-right "></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- 主内容区结束 -->
+		</div>
+		<!-- 右侧内容区结束 -->
+
+	<div class="side-dialog">
+		<div class="side-dialog-header"><h2>乌鲁木齐麦克斯威国际货代有限</h2><button class="yy-btn yy-btn-no-border"><i class="icon-plus"></i> 添加</button></div>
+		<div class="side-dialog-body">
+			<div class="yy-details-box">
+				<div class="details-box-left details-box-left-dialog">
+					<ul class="yy-line-tab yy-line-tab-small yy-line-tab-mb">
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link active">动态</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">详细信息</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">联系人</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">计划任务</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">跟进历史</a></li>
+					</ul>
+					<div class="yy-talkbox">
+						<div class="send-cnt">
+							<textarea class="send-text"></textarea>
+						</div>
+						<div class="insert-line">
+							<div class="insert-cell insert-picture">
+								<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-plus"></i> 图片</button>
+							</div>
+							<div class="insert-cell insert-file">
+								<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-plus"></i> 文件</button>
+							</div>
+							<div class="sead-btn">
+								<button class="yy-btn yy-btn-primary yy-btn-mini">发送</button>
+								<button class="yy-btn yy-btn-mini">取消</button>
+							</div>
+						</div>
+					</div>
+					<div class="yy-record-area">
+						<div class="yy-record-grid">
+							<div class="yy-record-title">08/25周二</div>
+							<div class="yy-record-item">
+								<div class="record-item-msg">
+									<i class="record-icon record-icon-primary icon-tags"></i>
+									<span class="record-timeinfo">14:20</span>
+								</div>
+								<div class="record-item-content">
+									<strong class="record-person">王大锤</strong>
+									<span class="record-state">创建了销售机会：</span>
+									XXX公司有意向加入运价物流云平台XXX公司有意向加入运
+									<a class="record-delete" href="javascript:">删除</a>
+								</div>
+							</div>
+							<div class="yy-record-item">
+								<div class="record-item-msg">
+									<i class="record-icon record-icon-success icon-tags"></i>
+									<span class="record-timeinfo">14:20</span>
+								</div>
+								<div class="record-item-content">
+									<strong class="record-person">王大锤</strong>
+									<span class="record-state">创建了销售机会：</span>
+									流云平台XXX公司有意向加入运价物流云平台
+									<a class="record-delete" href="javascript:">删除</a>
+								</div>
+							</div>
+						</div>
+						<div class="yy-record-grid">
+							<div class="yy-record-title">08/25周三</div>
+							<div class="yy-record-item yy-record-item-last">
+								<div class="record-item-msg">
+									<i class="record-icon record-icon-warning icon-tags"></i>
+									<span class="record-timeinfo">14:20</span>
+								</div>
+								<div class="record-item-content">
+									<strong class="record-person">王大锤</strong>
+									<span class="record-state">创建了销售机会：</span>
+									万万没想到竟然加入运价物流云平台
+									<a class="record-delete" href="javascript:">删除</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="details-box-right">
+					<div class="yy-team-group">
+						<h3 class="team-group-title">
+							客户负责人
+						</h3>
+						<ul class="team-group-cnt">
+							<li class="team-group-cell"></li>
+						</ul>
+					</div>
+					<div class="yy-team-group">
+						<h3 class="team-group-title">
+							销售团队成员
+						</h3>
+						<ul class="team-group-cnt">
+							<li class="team-group-cell"></li>
+							<li class="team-group-cell"></li>
+							<li class="team-group-cell"></li>
+							<li class="team-group-cell"></li>
+							<li class="team-group-cell"></li>
+							<li class="team-group-cell"></li>
+							<li class="team-group-cell"></li>
+							<li class="team-group-cell"></li>
+							<li class="team-group-cell team-group-add">
+								<a href="javascript:">+</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="yy-dialog w500 none">
+		<div class="yy-dialog-header">新建用户<a class="yy-close" href="javascript:"><i class="icon-times"></i></a></div>
+		<div class="yy-dialog-body">
+			<div  class="yy-dialog-grid">
+				<div class="yy-form-line">
+					<label class="yy-label-inline">姓名：</label>
+					<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">手机：</label>
+					<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">电子邮箱：</label>
+					<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">性别：</label>
+					<div class="yy-radio w50">
+						<input id="man" type="radio" name="control">
+						<label for="man">男</label>
+					</div>
+					<div class="yy-radio w50">
+						<input id="wenman" type="radio" name="control">
+						<label for="wenman">女</label>
+					</div>
+				</div>
+				<div class="yy-form-line">
+					<label class="yy-label-inline">部门：</label>
+					<select class="yy-original-select yy-original-select-small" id="99" name="">
+						<option value="">斯大林空间阿斯顿</option>
+						<option value="">斯大林空间阿斯顿2</option>
+						<option value="">斯大林空间阿斯顿3</option>
+						<option value="">斯大林空间阿斯顿4</option>
+						<option value="">斯大林空间阿斯顿</option>
+					</select>
+				</div>
+				<div class="yy-form-line">
+					<a href="javascript:" class="yy-btn-link">添加更多信息 >></a>
+				</div>
+				<div class="more-info-grid">
+					<div class="yy-form-line">
+						<label class="yy-label-inline">职位：</label>
+						<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+					</div>
+					<div class="yy-form-line">
+						<label class="yy-label-inline">主管：</label>
+						<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+					</div>
+					<div class="yy-form-line">
+						<label class="yy-label-inline">员工编号：</label>
+						<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+					</div>
+					<div class="yy-form-line">
+						<label class="yy-label-inline">入职日期：</label>
+						<input type="text" id="" class="yy-input yy-input-small" placeholder="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">保存</button>
+		</div>
+	</div>
+
+	<div class="yy-dialog w600 none" style="right:0;">
+		<div class="yy-dialog-header">导入数据<a class="yy-close" href="javascript:"><i class="icon-times"></i></a></div>
+		<div class="yy-dialog-body">
+			<div class="yy-dialog-grid">
+				<div class="yy-form-line">
+					<p>仅支持以逗号为分隔符的文本文件【filename.csv】，文件最大10MB</p>
+				</div>
+				<div class="yy-form-line">
+					<p>请按照数据模板的格式准备导入数据，模板中的表头名称不可更改，表头行不能删除</p>
+					<a href="javascript:" class="yy-btn-link">下载数据模版</a>
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label-block">选择文件编码：</label>
+					<select name="" id="99" class="yy-original-select yy-original-select-small">
+						<option value="">斯大林空间阿斯顿</option>
+						<option value="">斯大林空间阿斯顿2</option>
+						<option value="">斯大林空间阿斯顿3</option>
+						<option value="">斯大林空间阿斯顿4</option>
+						<option value="">斯大林空间阿斯顿</option>
+					</select>
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label-block">当公司邮箱重复时：</label>
+					<select name="" id="99" class="yy-original-select yy-original-select-small">
+						<option value="">斯大林空间阿斯顿</option>
+						<option value="">斯大林空间阿斯顿2</option>
+						<option value="">斯大林空间阿斯顿3</option>
+						<option value="">斯大林空间阿斯顿4</option>
+						<option value="">斯大林空间阿斯顿</option>
+					</select>
+				</div>
+				<div class="yy-form-line">
+					<label for="66" class="yy-label-block">请选择需要导入的csv文件：</label>
+					<button class="yy-btn yy-btn-linear"><i class="icon-plus"></i> 选择文件</button>
+				</div>
+				<div class="yy-form-line">
+					<p>上传文件可能需要几分钟的时间，取决于文件大小和网速</p>
+				</div>
+			</div>
+		</div>
+		<div class="yy-dialog-footer">
+			<button class="yy-btn yy-btn-primary">保存</button>
+		</div>
+	</div>
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,92 @@
+//
+// 动态信息
+// --------------------------------------------------
+// 变量
+
+
+.yy-news-list{}
+
+
+
+.news-list-cell{
+  position: relative;
+  padding: 15px 10px;padding-left: 70px;
+  border-bottom: 1px solid #ccc;
+  &:last-child{
+    border-bottom-width: 0;
+  }
+  &:extend(.clearfix all);
+}
+
+.news-list-cell-inside{
+  border-bottom:1px dashed #d9d9d9;
+}
+
+.news-person{
+  display: block;position: absolute;left: 10px;top: 15px;
+  width: 50px;height: 50px;margin-right: 10px;border-radius: 4px;
+  background: #ccc;overflow: hidden;
+  img{
+    width: 100%;height: 100%;
+  }
+}
+
+.news-content{
+ 
+  
+}
+
+.news-content-title{
+  font-weight: bold;
+}
+
+
+.news-content-info{
+  color: #666;
+}
+
+.news-content-bottom{
+  &:extend(.clearfix all);
+
+  font-size: 12px;
+  
+}
+
+.news-info-line{
+  &:extend(.clearfix all);
+  padding: 10px 0;
+  > .time-info{
+    float: left;
+    color: #999;
+  }
+  > .news-fn{
+    float: right;
+    > a{
+     color: #4388c7;
+   }
+ }
+}
+
+
+.comment-info-box{
+  &:extend(.clearfix all);
+  position: relative;
+  padding: 10px 15px;
+  border: 1px solid #ccc;background: #fcfcfc;border-radius: 3px;
+  .yy-arrow{
+    em{
+      color: #fafafa;
+    }
+  }
+  > .yy-btn-success{
+    float: right;
+    margin-top: 10px;
+  }
+
+  > .yy-input-group {
+    // + .yy-news-list-inside{
+      padding-top: 10px;
+      border-top: 1px solid #fff;
+    // }
+  }
+}

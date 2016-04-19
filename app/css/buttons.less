@@ -22,8 +22,8 @@
   color: @btn-color;
 
   &:hover{
-    border-color: darken(@btn-bg, 10%);
-    background-color: darken(@btn-bg, 5%);
+    border-color: darken(@btn-bg, 15%);
+    background-color: darken(@btn-bg, 10%);
   }
 }
 
@@ -43,7 +43,7 @@
   white-space: nowrap;
   .button-size;
   outline: none;
-  user-select:none;
+  // .user-select(none);
 
   // &,
   // &:active,
@@ -53,24 +53,26 @@
   //   }
   // }
 
-  &:hover,
-  &:focus {
-    border-color: #bbb;
-    text-decoration: none;
-  }
+  // &:hover,
+  // &:focus {
+  //   color: @btn-default-color;
+  //   text-decoration: none;
+  // }
 
   &:active,
   &.active {
+    outline: 0;
     // background-image: none;
     box-shadow:inset 0 3px 5px rgba(0,0,0,.125);
   }
 
   &.disabled,
-  &[disabled] {
-    pointer-events: none; // Future-proof disabling of clicks
+  &[disabled],
+  fieldset[disabled] & {
     cursor: not-allowed;
-    .opacity(.6);
-    box-shadow:none;
+    pointer-events: none; // Future-proof disabling of clicks
+    .opacity(.65);
+    // .box-shadow(none);
   }
 }
 
@@ -117,3 +119,62 @@
 .yy-btn-small{
   .button-size(@input-height-small;15px)
 }
+
+
+//单行100%宽的按钮
+.yy-btn-block{
+  display: block;
+  width: 100%;
+  text-align: left;
+  + .yy-btn-block{
+    margin-top: 10px;
+  }
+  > .icon-caret-down{
+    float: right;
+    line-height: 28px;
+  }
+}
+
+//带下拉的按钮外框
+.yy-btn-drop-down{
+  position: relative;
+  display: inline-block;vertical-align: middle;line-height: 30px;font-size: 14px;
+  > .yy-drop-down{
+    left: 0;top: 28px;
+    text-align: left;
+  }
+}
+
+
+.yy-btn-group{
+  display: inline-block;
+  font-size: 12px;vertical-align: middle;
+}
+
+
+// 链接
+.yy-btn-link{
+  display: inline-block;
+  padding: 5px 0;
+  text-align: center;font-weight: 500;vertical-align: middle;white-space: nowrap;outline: none;color: #4a73ab;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
+// 上传功能的按钮
+
+.yy-file-upload{
+  position: relative;display: inline-block;
+}
+
+.yy-file-upload-input{
+  position: absolute;z-index: 10;
+  left: 0;top: 0;bottom: 0;opacity: 0;
+  width: 100%;height: 100%;
+  cursor: pointer;
+}
+
+
+

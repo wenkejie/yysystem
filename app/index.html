@@ -7,6 +7,7 @@
 	<!-- build:css({.tmp,app}) css/main.css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
+    <!-- <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" /> -->
 </head>
 <body>
 	<header>
@@ -26,34 +27,50 @@
 			<div class="hr-black"></div>
 				<ul class="nav">
 					<li>
-						<a href="" class="nav-link nav-link-active">
+						<a href="index.html" class="nav-link nav-link-active">
 							<i class="icon-list-alt "></i>
-							是肯德基
+							首页
 						</a>
 					</li>
 					<li>
-						<a href="" class="nav-link">
+						<a href="detaile.html" class="nav-link">
 							<i class="icon-print "></i>
-							是肯德基
+							公海客户
 						</a>
 					</li>
 					<li>
-						<a href="" class="nav-link">
-							<i class="icon-picture"></i>
-							是肯德基
-						</a>
-					</li>
-					<li>
-						<a href="" class="nav-link">
+						<a href="detaile.html" class="nav-link">
 							<i class="icon-asterisk "></i>
-							是肯德基
+							我的客户
+						</a>
+					</li>
+					<li>
+						<a href="person-detail.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							联系人
+						</a>
+					</li>
+					<li>
+						<a href="active-record.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							活动记录
+						</a>
+					</li>
+					<li>
+						<a href="table-drag.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							基础设置
 						</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="side-bar-footer-menu">
 				<div class="hr-black"></div>
-
+				<div class="menu-fn">
+					<button><i class="icon-question-circle"></i></button>
+					<button><i class="icon-question-circle"></i></button>
+					<button><i class="icon-question-circle"></i></button>
+				</div>
 			</div>
 		</div>
 		<!-- 左侧栏目结束 -->
@@ -65,10 +82,9 @@
 				</div>
 				<div class="location-nav">
 					<ul class="yy-line-tab yy-line-tab-large">
-						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link active">业务字段定制</a></li>
-						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">业务参数设定</a></li>
-						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">部门和用户</a></li>
-						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">业务规则设定</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link active">运营监控</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">我的任务</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">我的动态</a></li>
 					</ul>
 				</div>
 			</div>
@@ -94,26 +110,178 @@
 				<div class="home-main-content-left">
 					<div class="panel">
 						<div class="panel-header"><h3>运营监控</h3></div>
-						<div class="panel-body">
-							<input type="text" class="yy-input active" placeholder="askdjf">
+						<div class="panel-body clearfix">
+							<!-- <input type="text" class="yy-input active" placeholder="askdjf">
 							<input type="text" class="yy-input" value="刀口浪尖" disabled="disabled">
 							<input type="text" class="yy-input error">
 							<input type="text" class="yy-input">
 							<input type="text" class="yy-input yy-input-small">
 							<button class="yy-btn yy-btn-small yy-btn-primary">三空间</button>
-							<button class="yy-btn yy-btn-mini">三空间</button>
+							<button class="yy-btn yy-btn-mini">三空间</button> -->
+							<div class="analysis-grid">
+								<h3 class="analysis-title">业务完成情况</h3>
+								<div class="analysis-content">
+									<div class="analysis-content-header">
+										<ul class="analysis-header-filter">
+											<li><a class="data-filter-cell" href="javascript:">本月</a></li>
+											<li><a class="data-filter-cell data-filter-active" href="javascript:">本季度</a></li>
+											<li><a class="data-filter-last" href="javascript:">本年</a></li>
+										</ul>
+										<div class="analysis-header-fn">
+											<a class="deploy-button" href="javascript:"><i class="icon-cog"></i></a>
+										</div>
+									</div>
+									<div class="analysis-content-body">
+										<img src="images/analysiy1.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analysis-grid">
+								<h3 class="analysis-title">活动记录排行</h3>
+								<div class="analysis-content">
+									<div class="analysis-content-header">
+										<ul class="analysis-header-filter">
+											<li><a class="data-filter-cell" href="javascript:">本月</a></li>
+											<li><a class="data-filter-cell data-filter-active" href="javascript:">本季度</a></li>
+											<li><a class="data-filter-last" href="javascript:">本年</a></li>
+										</ul>
+										<div class="analysis-header-fn">
+											<a class="deploy-button" href="javascript:"><i class="icon-cog"></i></a>
+										</div>
+									</div>
+									<div class="analysis-content-body pd0">
+										<div class="result-area pd0">
+											<table class="yy-table yy-table-analysis" style="">
+												<thead>
+													<th class="w100"></th>
+													<th class="w50">dawd</th>
+												</thead>
+												<tbody>
+													<tr>
+														<td>dawd</td>
+														<td>dawd</td>
+													</tr>
+													<tr>
+														<td>dawd</td>
+														<td>dawd</td>
+													</tr>
+													<tr>
+														<td>dawd</td>
+														<td>dawd</td>
+													</tr>
+													<tr>
+														<td>dawd</td>
+														<td>dawd</td>
+													</tr>
+													<tr>
+														<td>dawd</td>
+														<td>dawd</td>
+													</tr>
+													<tr>
+														<td>dawd</td>
+														<td>dawd</td>
+													</tr>
+													<tr>
+														<td>dawd</td>
+														<td>dawd</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="analysis-grid">
+								<h3 class="analysis-title">活动记录排行</h3>
+								<div class="analysis-content">
+									<div class="analysis-content-header">
+										<ul class="analysis-header-filter">
+											<li><a class="data-filter-cell" href="javascript:">本月</a></li>
+											<li><a class="data-filter-cell data-filter-active" href="javascript:">本季度</a></li>
+											<li><a class="data-filter-last" href="javascript:">本年</a></li>
+										</ul>
+										<div class="analysis-header-fn">
+											<a class="deploy-button" href="javascript:"><i class="icon-cog"></i></a>
+										</div>
+									</div>
+									<div class="analysis-content-body">
+										<img src="images/analysiy1.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analysis-grid">
+								<h3 class="analysis-title">活动记录排行</h3>
+								<div class="analysis-content">
+									<div class="analysis-content-header">
+										<ul class="analysis-header-filter">
+											<li><a class="data-filter-cell" href="javascript:">本月</a></li>
+											<li><a class="data-filter-cell data-filter-active" href="javascript:">本季度</a></li>
+											<li><a class="data-filter-last" href="javascript:">本年</a></li>
+										</ul>
+										<div class="analysis-header-fn">
+											<a class="deploy-button" href="javascript:"><i class="icon-cog"></i></a>
+										</div>
+									</div>
+									<div class="analysis-content-body">
+										<img src="images/analysiy1.png" alt="">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!-- 左侧结束 -->
 				<div class="home-main-content-right">
 					<div class="panel panel-gray">
-						<div class="panel-body">adfasfd</div>
+						<div class="panel-header">
+							<div class="userinfo-case">
+								<a class="userinfo-portrait" href="javascript:">
+									<img src="images/userinfo.png" alt="">
+								</a>
+								<div class="userinfo-content">
+									<p class="userinfo-content-cell">
+										<h3 class="username">lucky，</h3><span class="notice">晚上好！</span>
+									</p>
+									<p class="userinfo-content-cell"><span class="timeinfo">今天是 星期二，2014-08-12</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<ul class="task-filter">
+								<li class="task-filter-cell">
+									<a class="task-num text-success" href="javascript:">0</a>
+									<span class="task-sortinfo">待完成任务</span>
+								</li>
+								<li class="task-filter-cell">
+									<a class="task-num text-warning" href="javascript:">5</a>
+									<span class="task-sortinfo">过期任务</span>
+								</li>
+								<li class="task-filter-last">
+									<a class="task-num text-danger" href="javascript:">7</a>
+									<span class="task-sortinfo">已完成任务</span>
+								</li>
+							</ul>
+						</div>
 					</div>
 
 					<div class="panel panel-gray">
 						<div class="panel-header"><h3><i class="icon-calendar"></i> 今天日程</h3></div>
-						<div class="panel-body">adfasfd</div>
+						<div class="panel-body">
+							<ul class="schedule-list">
+								<li class="schedule-list-cell">
+									<span class="timetips text-warning">09:00</span>
+									<a class="schedule-link" href="javascript:">今晚9点去打老虎</a>
+								</li>
+								<li class="schedule-list-cell">
+									<span class="timetips text-warning">09:00</span>
+									<a class="schedule-link" href="javascript:">今晚9点去打老虎</a>
+								</li>
+								<li class="schedule-list-cell">
+									<span class="timetips text-warning">09:00</span>
+									<a class="schedule-link" href="javascript:">今晚9点去打老虎</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<!-- 右侧结束 -->
@@ -135,6 +303,15 @@
 			</ul>
 		</div>
 	</div>
+	<!-- // <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+		(function($){
+			$(window).load(function(){
+				$(".panel-body").mCustomScrollbar();
+			});
+		})(jQuery);
+	</script>
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 

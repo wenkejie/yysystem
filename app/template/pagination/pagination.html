@@ -1,0 +1,7 @@
+<ul class="yy-page">
+  <li ng-if="boundaryLinks" ><a ng-class="{disabled: noPrevious()}" class="yy-page-cell" href ng-click="selectPage(1)">{{getText('first')}}</a></li>
+  <li ng-if="directionLinks" ><a ng-class="{disabled: noPrevious()}" class="yy-page-cell" href ng-click="selectPage(page - 1)">{{getText('previous')}}</a></li>
+  <li ng-repeat="page in pages track by $index" ><a ng-class="{active: page.active}" class="yy-page-cell" href ng-click="selectPage(page.number)">{{page.text}}</a></li>
+  <li ng-if="directionLinks" ><a ng-class="{disabled: noNext()}" class="yy-page-cell" href ng-click="selectPage(page + 1)">{{getText('next')}}</a></li>
+  <li ng-if="boundaryLinks" ><a ng-class="{disabled: noNext()}" class="yy-page-cell" href ng-click="selectPage(totalPages)">{{getText('last')}}</a></li>
+</ul>

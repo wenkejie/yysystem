@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Document</title>
+	<!-- build:css({.tmp,app}) css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+	<header>
+		<div class="logo"><a href="#" class="logo-link">运营平台</a></div>
+		<ul class="header-menu">
+			<li class="header-menu-item"><a href="javascript:" class="header-menu-link">项目</a></li>
+			<li class="header-menu-item"><a href="javascript:" class="header-menu-link">李光耀 <i class="icon-chevron-down"></i></a></li>
+		</ul>
+	</header>
+	<!-- 头部结束 -->
+	<div class="wrapper">
+		<div class="side-bar">
+			<div class="quick-action">
+				<button class="yy-btn yy-btn-sm yy-btn-danger quick-action-btn"><i class="icon-plus"></i> 新建</button>
+			</div>
+			<nav>
+				<div class="hr-black"></div>
+				<ul class="nav">
+					<li>
+						<a href="index.html" class="nav-link nav-link-active">
+							<i class="icon-list-alt "></i>
+							首页
+						</a>
+					</li>
+					<li>
+						<a href="detaile.html" class="nav-link">
+							<i class="icon-print "></i>
+							公海客户
+						</a>
+					</li>
+					<li>
+						<a href="detaile.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							我的客户
+						</a>
+					</li>
+					<li>
+						<a href="person-detail.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							联系人
+						</a>
+					</li>
+					<li>
+						<a href="active-record.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							活动记录
+						</a>
+					</li>
+					<li>
+						<a href="table-drag.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							基础设置
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="side-bar-footer-menu">
+				<div class="hr-black"></div>
+
+			</div>
+		</div>
+		<!-- 左侧栏目结束 -->
+		<div class="side-content">
+			<div class="location-info">
+				<div class="current-location">
+					<i class="icon-list-alt "></i>
+					控制面板 / <button class="yy-btn yy-btn-linear">斯洛克的积 <i class="icon-chevron-down"></i></button>
+				</div>
+				<div class="location-nav">
+					<ul class="yy-line-tab yy-line-tab-large">
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link active">业务字段定制</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">业务参数设定</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">部门和用户</a></li>
+						<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">业务规则设定</a></li>
+					</ul>
+				</div>
+			</div>
+			 	
+			<div class="sub-location-nav">
+				<ul class="yy-line-tab">
+					<li class="yy-line-tab-title">部门和用户</li>
+					<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link active">角色管理</a></li>
+					<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">角色管理</a></li>
+					<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">角色管理</a></li>
+					<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">角色管理</a></li>
+				</ul>
+			</div> 
+			
+			<!-- main-content、main-content外面不得自己增加层级 -->
+			<div class="main-content">
+				<!-- <button class="yy-btn"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-linear"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-primary"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-success"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-warning"><i class="icon-plus"></i> 新建</button>
+				<button class="yy-btn yy-btn-danger" disabled="disabled"><i class="icon-plus"></i> 新建</button> -->
+
+				<div class="panel panel-fixed">
+					<div class="panel-header">
+						<button class="yy-btn yy-btn-primary"><i class="icon-plus"></i> 新建用户</button>
+						<button class="yy-btn"><i class="icon-cloud"></i> 导入用户</button>
+						<button class="yy-btn yy-btn-no-border"><i class="icon-trash-o"></i> 删除</button>
+						<button class="yy-btn yy-btn-no-border"><i class="icon-mail-forward"></i> 领取或分配</button>
+						<button class="yy-btn yy-btn-no-border"><i class="icon-check-square-o"></i> 创建任务</button>
+					</div>
+					<div class="panel-body">
+						<div class="result-area">
+							<div class="result-area-content">
+								<table class="yy-table">
+										<thead>
+											<tr>
+												<th width="50"><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></th>
+												<th>姓名</th>
+												<th>手机号</th>
+												<th>部门</th>
+												<th>职位</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>sss</td>
+												<td>sss</td>
+												<td>sss</td>
+												<td>ss</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dad</td>
+												<td>das</td>
+												<td>dasd</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" title="选中/取消选中" name="" id="jselAll"></td>
+												<td>dasd</td>
+												<td>dasd</td>
+												<td>das</td>
+												<td>das</td>
+											</tr>
+											
+										</tbody>
+								</table>
+							</div>
+							<div class="result-area-footer">
+								<ul class="yy-page">
+									<li><a class="yy-page-cell disabled" href="javascript:"><i class="icon-angle-double-left"></i></a></li>
+									<li><a class="yy-page-cell" href="javascript:"><i class="icon-angle-left"></i></a></li>
+									<li><a class="yy-page-cell active" href="javascript:">1</a></li>
+									<li><a class="yy-page-cell" href="javascript:">2</a></li>
+									<li><a class="yy-page-cell" href="javascript:">3</a></li>
+									<li><a class="yy-page-cell" href="javascript:">...</a></li>
+									<li><a class="yy-page-cell" href="javascript:"><i class="icon-angle-right"></i></a></li>
+									<li><a class="yy-page-cell" href="javascript:"><i class="icon-angle-double-right "></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- 主内容区结束 -->
+			<!-- 右侧弹窗 -->
+			<div class="side-dialog">
+				<div class="side-dialog-header">
+					<h2>乌鲁木齐麦克斯威国际货代有限</h2>
+					<div class="yy-btn-group">
+						<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-plus"></i> 添加</button>
+						<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-check-square-o"></i> 创建任务</button>
+						<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-mail-forward"></i> 领取分配</button>
+						<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-trash-o"></i> 删除</button>
+					</div>
+					<div class="hr-y ml30"></div>
+					<div class="side-dialog-closed">
+						<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-plus"></i></button>
+					</div>
+				</div>
+				<div class="side-dialog-body">
+					<div class="yy-details-box">
+						<div class="details-box-left">
+							<ul class="yy-line-tab yy-line-tab-small yy-line-tab-mb">
+								<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link active">动态</a></li>
+								<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">详细信息</a></li>
+								<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">联系人</a></li>
+								<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">计划任务</a></li>
+								<li class="yy-line-tab-item"><a href="#" class="yy-line-tab-link">跟进历史</a></li>
+							</ul>
+							<div class="yy-file-btn-group">
+								<div class="yy-file-first">
+									<a class="" href="javascript:">我的任务 <i class="icon-caret-down"></i></a>
+									<div class="yy-float-container yy-drop-down">
+										<ul class="yy-select-list">
+											<li><a href="#" class="yy-select-link">我负责的任务</a></li>
+											<li><a href="#" class="yy-select-link">我分配的任务</a></li>
+											<li><a href="#" class="yy-select-link">我参与的任务</a></li>
+										</ul>
+									</div>
+								</div>
+								<a class="yy-file-cell active" href="javascript:">待完成</a>
+								<a class="yy-file-cell" href="javascript:">已过期</a>
+								<a class="yy-file-last" href="javascript:">已完成</a>
+							</div>
+							<div class="yy-record-area yy-record-plan-area">
+								<div class="yy-record-grid">
+									<div class="yy-record-title">08/25周二</div>
+									<div class="yy-record-item">
+										<div class="record-item-msg">
+											<i class="record-icon record-icon-primary icon-tags"></i>
+										</div>
+										<div class="record-item-content">
+											<h3 class="record-item-info">
+												<strong>下周打电话确认同客户进行产品演示时间</strong>
+											</h3>
+											<div class="record-item-detail">
+												<p>本周已经同客户进行初步的沟通，对产品认可</p>
+												<div class="record-item-line">
+													<i class="icon-group"></i> <span class="group-members">吕倩</span>
+												</div>
+												<div class="record-item-line">
+													<span><i class="icon-clock-o"></i> 2014-07-30 17:36</span>
+													<span class="ml10"><i class="icon-arrow-circle-right"></i> 2014-07-30 17:36</span>
+												</div>
+												<div class="record-item-line">
+													<span class="record-state">该任务于2014-07-30 17:36由吕倩创建</span>
+												</div>
+												<div class="record-item-line">
+													<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-edit"></i> 编辑</button>
+													<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-compress"></i> 完成</button>
+													<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-comments"></i> 评论</button>
+													<button class="yy-btn yy-btn-no-border yy-btn-mini"><i class="icon-trash-o"></i> 删除</button>
+												</div>
+											</div>
+											<a class="record-fn" href="javascript:">收起 <i class="icon-angle-up"></i></a>
+										</div>
+									</div>
+									<div class="yy-record-item">
+										<div class="record-item-msg">
+											<i class="record-icon record-icon-success icon-tags"></i>
+										</div>
+										<div class="record-item-content">
+											<h3 class="record-item-info">
+												<strong>下周打电话确认同客户进行产品演示时间</strong>
+											</h3>
+											<a class="record-fn" href="javascript:">展开 <i class="icon-angle-down"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="yy-record-grid">
+									<div class="yy-record-title">08/25周三</div>
+									<div class="yy-record-item yy-record-item-last">
+										<div class="record-item-msg">
+											<i class="record-icon record-icon-warning icon-tags"></i>
+										</div>
+										<div class="record-item-content">
+											<h3 class="record-item-info">
+												<strong>下周打电话确认同客户进行产品演示时间</strong>
+											</h3>
+											<a class="record-fn" href="javascript:">展开 <i class="icon-angle-down"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="yy-form none">
+								<div class="yy-form-cate">
+									<i class="icon-list"></i> <h3>联系人</h3>
+								</div>
+								<div class="yy-form-line">
+									<label for="22" class="yy-label-inline">电话号码：</label>
+									<input type="text" id="" class="yy-input yy-input-small w230" placeholder="旺旺王旺旺王旺旺王旺旺王">
+									<button class="yy-btn yy-btn-primary yy-btn-mini">√</button>
+									<button class="yy-btn yy-btn-mini">×</button>
+								</div>
+								<div class="yy-form-line">
+									<label for="22" class="yy-label-inline">电话号码：</label>
+									大苏打打扫打扫打扫打扫的
+								</div>
+								<div class="yy-form-line">
+									<label for="22" class="yy-label-inline">电话号码：</label>
+									大苏打打扫打扫打扫打扫的
+								</div>
+								<div class="yy-form-line">
+									<label for="22" class="yy-label-inline">电话号码：</label>
+									大苏打打扫打扫打扫打扫的
+								</div>
+								<div class="yy-form-cate">
+									<i class="icon-list"></i> <h3>联系人</h3>
+								</div>
+								<div class="yy-form-line">
+									<label for="22" class="yy-label-inline">电话号码：</label>
+									大苏打打扫打扫打扫打扫的
+								</div>
+								<div class="yy-form-line">
+									<label for="22" class="yy-label-inline">电话号码：</label>
+									大苏打打扫打扫打扫打扫的
+								</div>
+								<div class="yy-form-line">
+									<label for="22" class="yy-label-inline">电话号码：</label>
+									大苏打打扫打扫打扫打扫的
+								</div>
+								<div class="yy-form-line">
+									<label for="22" class="yy-label-inline">电话号码：</label>
+									大苏打打扫打扫打扫打扫的
+								</div>
+							</div>
+						</div>
+
+						<div class="details-box-right">
+							<div class="yy-team-group">
+								<h3 class="team-group-title">
+									客户负责人
+								</h3>
+								<ul class="team-group-cnt">
+									<li class="team-group-cell"></li>
+								</ul>
+							</div>
+							<div class="yy-team-group">
+								<h3 class="team-group-title">
+									销售团队成员
+								</h3>
+								<ul class="team-group-cnt">
+									<li class="team-group-cell"></li>
+									<li class="team-group-cell"></li>
+									<li class="team-group-cell"></li>
+									<li class="team-group-cell"></li>
+									<li class="team-group-cell"></li>
+									<li class="team-group-cell"></li>
+									<li class="team-group-cell"></li>
+									<li class="team-group-cell"></li>
+									<li class="team-group-cell team-group-add">
+										<a href="javascript:">+</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 右侧内容区结束 -->
+	</div>
+	
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+<!-- endbuild -->
+</body>
+</html>

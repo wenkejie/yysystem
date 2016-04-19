@@ -1,0 +1,88 @@
+//
+// 计划节奏
+// --------------------------------------------------
+// 变量
+
+
+.yy-plan-grid{
+   // padding-top: 15px;
+  + .yy-plan-grid{
+     padding-top: 15px;
+  }
+ 
+}
+
+.plan-grid-title{
+  padding: 7px 15px;
+  border-top: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;background: #f7f7f7;
+  > .count-info{
+    display: inline-block;
+    padding: 3px 8px;margin-left: 10px;
+    background: #EDEDED;
+  }
+}
+
+.plan-grid-content{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  &:last-child{
+    border-bottom-width: 0;
+  }
+}
+
+
+
+
+.plan-item-header{
+  padding: 10px 5px;
+  .yy-checkbox{
+    margin-right: 5px;
+  }
+}
+
+.plan-item-body{
+  &:extend(.clearfix all);
+  padding-left: 32px;
+  .item-left{
+    float: left;
+  }
+  > .item-right{
+    float: right;
+  }
+}
+
+.item-left{
+  .plan-info-tab{
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 2px;vertical-align: middle;
+  }
+  .success{
+    background: #EFFFBF;
+    color: #336600;
+  }
+
+  .warning{
+    background: #FFF0C3;
+    color: #B35B03;
+  }
+
+  .danger{
+    background: #FFE2D9;
+    color: #8C2300;
+  }
+}
+
+
+
+.team-info{
+  > li{
+    float: left;
+    height: 30px;width: 30px;margin-right: 5px;
+    background: #ccc;border-radius: 4px;
+  }
+
+  .team-leader{
+    margin-right: 10px;
+  }
+}

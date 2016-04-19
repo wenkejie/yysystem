@@ -1,0 +1,45 @@
+//
+// 表格
+// --------------------------------------------------
+// 变量
+
+
+.yy-table{
+
+  width: 100%;
+  text-align: left;overflow-y: auto;
+  th{
+    height: 31px;padding: 0 10px;
+    background: #f6f6f6;border-bottom: 1px solid @primary-border-color; 
+  }
+  td{
+    padding: 8px 10px;
+    height: 18px;
+  }
+  tbody > tr{
+    &:hover{
+      background:#f2f2f2;
+    }
+  }
+
+}
+
+
+.yy-table-drag{
+  th{
+    background: #fff;
+  }
+  tbody > tr{
+    border-bottom: 1px solid @primary-border-color; cursor: move;
+  }
+}
+
+.yy-table-analysis{
+  th{
+    border-bottom: 1px solid #eee;padding: 0;
+    background: #fff;
+  }
+  td{
+    padding: 0;height: 26px;line-height: 26px;
+   }
+}

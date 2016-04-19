@@ -26,27 +26,39 @@
 			<div class="hr-black"></div>
 				<ul class="nav">
 					<li>
-						<a href="" class="nav-link nav-link-active">
+						<a href="index.html" class="nav-link nav-link-active">
 							<i class="icon-list-alt "></i>
-							发生大幅
+							首页
 						</a>
 					</li>
 					<li>
-						<a href="" class="nav-link">
+						<a href="detaile.html" class="nav-link">
 							<i class="icon-print "></i>
-							是肯德基
+							公海客户
 						</a>
 					</li>
 					<li>
-						<a href="" class="nav-link">
-							<i class="icon-picture"></i>
-							是肯德基
-						</a>
-					</li>
-					<li>
-						<a href="" class="nav-link">
+						<a href="detaile.html" class="nav-link">
 							<i class="icon-asterisk "></i>
-							是肯德基
+							我的客户
+						</a>
+					</li>
+					<li>
+						<a href="person-detail.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							联系人
+						</a>
+					</li>
+					<li>
+						<a href="detaile.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							活动记录
+						</a>
+					</li>
+					<li>
+						<a href="table-drag.html" class="nav-link">
+							<i class="icon-asterisk "></i>
+							基础设置
 						</a>
 					</li>
 				</ul>
@@ -91,8 +103,8 @@
 						<div class="panel-header"><h3>运营监控</h3></div>
 						<div class="panel-body">
 							
-							<div class="yy-dialog">
-								<div class="yy-dialog-header">阿道夫<a href="javascript:" class="yy-close"><i class="icon-remove"></i></a></div>
+							<div class="yy-dialog" style="top:500px;left:530px">
+								<div class="yy-dialog-header">阿道夫<a href="javascript:" class="yy-close"><i class="icon-times"></i></a></div>
 								<div class="yy-dialog-body">啊多发时段阿斯顿</div>
 								<div class="yy-dialog-footer">
 									<button class="yy-btn yy-btn-primary">确定</button>
@@ -103,7 +115,7 @@
 
 							<!-- 普通下拉菜单 -->
 							<div class="yy-float-container yy-drop-down" style="left:530px">
-								<ul class="yy-select">
+								<ul class="yy-select-list">
 									<li><a class="yy-select-link" href="#">卷发斯蒂芬</a></li>
 									<li><a class="yy-select-link" href="#">的卷发斯蒂芬</a></li>
 									<li><a class="yy-select-link" href="#">离开的卷发斯蒂芬</a></li>
@@ -116,7 +128,7 @@
 							
 							<!-- 多级下拉菜单 -->
 							<div class="yy-float-container yy-drop-down" style="left:700px">
-								<ul class="yy-select">
+								<ul class="yy-select-list">
 									<li class="title">卷发斯蒂芬</li>
 									<li><a class="yy-select-link" href="#">卷发斯蒂芬</a></li>
 									<li><a class="yy-select-link" href="#">的卷发斯蒂芬</a></li>
@@ -131,12 +143,12 @@
 							<!-- 带过滤功能select -->
 							<div class="yy-float-container yy-drop-down yy-filter-select" style="left:530px;top:250px;">
 							<div class="yy-filter-select-header">
-								<div class="yy-input-group yy-input-group-small yy-input-group-icon-before">
+								<div class="yy-input-group yy-input-group-small yy-input-group-icon-before dpb">
 									<i class="icon-search" ></i>
 									<input type="text" class="yy-input yy-input-block">
 								</div>
 							</div>
-								<ul class="yy-select">
+								<ul class="yy-select-list">
 									<li><a class="yy-select-link" href="#">卷发斯</a></li>
 									<li><a class="yy-select-link" href="#">的卷发斯蒂芬</a></li>
 									<li><a class="yy-select-link" href="#">离开的卷发斯蒂芬</a></li>
@@ -154,14 +166,21 @@
 							</div>
 							<div class="yy-form-line">
 								<label class="yy-label-inline" for="22">电话号码：</label>
-								<input type="text" class="yy-input" id="22" value="我是不能修改的" disabled="disabled">
+								<div class="yy-form-line-con">
+									<input type="text" class="yy-input" id="22" value="我是不能修改的" disabled="disabled">
+								</div>
 							</div>
+
 							<div class="yy-form-line">
-								<label class="yy-label-inline" for="33">饭店：</label>
-								<input type="text" class="yy-input error" id="33">
+								<label class="yy-label-inline" for="33">出错提示：</label>
+									<div class="yy-form-line-con">
+										<input type="text" class="yy-input error" id="33">
+										<span class="yy-form-des-block text-danger">亲，我错了，放了我吧！</span>
+									</div>
 							</div>
+
 							<div class="yy-form-line">
-								<label class="yy-label-inline" for="44">饭店：</label>
+								<label class="yy-label-inline yy-label-small" for="44">饭店：</label>
 								<input type="text" class="yy-input yy-input-small" id="44">
 								<button class="yy-btn yy-btn-small yy-btn-primary">确定</button>
 								<button class="yy-btn yy-btn-small ">取消</button>
